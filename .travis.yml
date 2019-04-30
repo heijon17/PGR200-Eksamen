@@ -1,0 +1,15 @@
+language: java
+sudo: false
+jdk:
+  - oraclejdk8
+services:
+  - postgresql
+addons:
+  postgresql: "9.6"
+before_script:
+  - psql -c 'create database conference;' -U postgres
+  - psql -c "CREATE USER demouser WITH PASSWORD 'abc123';" -U postgres
+before_install:
+  - sudo sed -i -e '/local.*peer/s/postgres/all/' -e 's/peer\|md5/trust/g' /etc/postgresql/*/main/pg_hba.conf
+  - sudo service postgresql restart
+  - sleep 1
