@@ -1,5 +1,5 @@
 
-[![Build Status](https://travis-ci.com/Westerdals/pgr200-eksamen-heijon17.svg?token=sBs9sspecp6XJzM3o2RF&branch=master)](https://travis-ci.com/Westerdals/pgr200-eksamen-heijon17)
+[![Build Status](https://travis-ci.com/heijon17/PGR200-Eksamen.svg?token=TGuBJrnYUu5XoV7ExVv8&branch=master)](https://travis-ci.com/heijon17/PGR200-Eksamen)
 
 
 # PGR200 Hovedinnlevering
